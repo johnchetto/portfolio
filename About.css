@@ -96,6 +96,7 @@
 .image-card img {
   width: 100%;
   height: auto;
+  /* hbuhb */
   border-radius: 12px;
   cursor: pointer;
   object-fit: cover;
