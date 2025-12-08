@@ -1,0 +1,166 @@
+/* ==============================
+   GENERAL STYLES
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: linear-gradient(rgba(5, 5, 29, 0.7), rgba(0, 0, 0, 0.9)),
+                url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e8e8e8;
+}
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 40, 0.85);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00eaff;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00eaff;
+}
+
+/* ==============================
+   ANIMATED HAMBURGER MENU
+============================== */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #00eaff;
+    transition: 0.4s ease;
+}
+
+.menu-icon.active {
+    transform: rotate(90deg);
+}
+
+/* ==============================
+   SKILL SECTIONS
+============================== */
+.skill-section {
+    padding: 60px 50px;
+    text-align: left;
+    background: rgba(15, 15, 40, 0.65);
+    margin: 25px auto;
+    border-radius: 18px;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+}
+
+.skill-section h2 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    color: #00eaff;
+    text-transform: uppercase;
+}
+
+.skill-section p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+@media (max-width: 768px) {
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide menu initially */
+    .nav-links {
+        flex-direction: column;
+        background: rgba(5, 5, 25, 0.95);
+        position: absolute;
+        top: 65px;
+        right: -100%;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+
+    /* Slide menu when active */
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .skill-section {
+        padding: 40px 20px;
+    }
+
+    .skill-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .skill-section p {
+        font-size: 1rem;
+    }
+}
+/* SIMPLE FOOTER */
+.footer {
+    background: rgba(10, 10, 40, 0.85);
+    color: #e8e8e8;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    backdrop-filter: blur(4px);
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    opacity: 0.9;
+}

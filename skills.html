@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - John Macharia</title>
+    <link rel="stylesheet" href="skill.css">
+    <script defer src="skills.js"></script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">John Macharia</div>
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SKILLS SECTIONS -->
+    <section class="skill-section" id="database">
+        <div class="content">
+            <h2>Database Management</h2>
+            <p>
+                I have experience with database management systems including <strong>MySQL</strong> and <strong>MS Access</strong>. I am skilled in designing, creating, and maintaining relational databases, handling queries, and ensuring data integrity. This enables me to store, retrieve, and manage data efficiently for projects and applications.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill-section" id="computer-app">
+        <div class="content">
+            <h2>Computer Applications</h2>
+            <p>
+                I am proficient in various computer applications such as <strong>MS Word</strong>, <strong>MS Excel</strong>, <strong>MS Publisher</strong>, and <strong>PowerPoint</strong>. I can create professional documents, spreadsheets, presentations, and publications, making it easy to communicate ideas effectively and manage office tasks.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill-section" id="desktop-publishing">
+        <div class="content">
+            <h2>Desktop Publishing</h2>
+            <p>
+                I am experienced in desktop publishing tools like <strong>MS Publisher</strong>, <strong>Canva</strong>, and <strong>Adobe Illustrator</strong>. I can design posters, branding materials, and logos, ensuring professional and visually appealing outputs for both digital and print media.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill-section" id="web-design">
+        <div class="content">
+            <h2>Web Design & Development</h2>
+            <p>
+                I have skills in web design and development, creating responsive websites that are user-friendly and visually engaging. I am also interested in exploring <strong>app development</strong> to build functional and interactive applications for multiple platforms.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill-section" id="networking">
+        <div class="content">
+            <h2>Networking</h2>
+            <p>
+                I understand computer networking concepts including LAN, WAN, and network troubleshooting. I can set up, configure, and maintain network systems to ensure seamless communication and data transfer across devices.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill-section" id="soft-skills">
+        <div class="content">
+            <h2>Soft Skills</h2>
+            <p>
+                I possess strong communication skills, both verbal and written, which enable me to convey ideas clearly and work effectively in teams. These soft skills complement my technical expertise, allowing me to collaborate efficiently and adapt to various professional environments.
+            </p>
+        </div>
+    </section>
+    <script>
+
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuIcon.classList.toggle('active');
+
+    // Switch icon between menu and X
+    if (menuIcon.classList.contains('active')) {
+        menuIcon.innerHTML = "&times;"; // X icon
+    } else {
+        menuIcon.innerHTML = "&#9776;"; // Hamburger icon
+    }
+});
+</script>
+<footer class="footer">
+    <div class="footer-container">
+        <h3 class="footer-logo">John Macharia</h3>
+        <p class="footer-text">
+            © 2025 John Macharia. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Macharia Portfolio</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- ICONS -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">JM</div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger / Mobile Menu -->
+        <div class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>John Macharia</span></h1>
+            <p>IT Support Specialist | Networking | Software Developer | Graphic & Design</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="primary-btn">Hire Me</a>
+                <a href="chetto/JohnMachariaCV.PDF" download class="primary-btn">Download CV</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/bull 2.jpg" alt="John Macharia" />
+        </div>
+    </header>
+
+    <!-- EXPERTISE SECTION -->
+    <section id="expertise" class="expertise-section">
+        <h2>My Expertise</h2>
+        <p class="section-description">
+            Three core areas where I apply technology to create meaningful, reliable, and user-focused solutions.
+        </p>
+
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <i data-lucide="network"></i>
+                <h3>Networking</h3>
+                <p>Designing, configuring, and managing secure, efficient, and reliable network infrastructures.</p>
+                <h4>Key Areas</h4>
+                <div class="tag-list">
+                    <span class="tag">Network Security</span>
+                    <span class="tag">Router Configuration</span>
+                    <span class="tag">Firewall Management</span>
+                    <span class="tag">TCP/IP & Protocols</span>
+                </div>
+            </div>
+
+            <div class="expertise-card">
+                <i data-lucide="code"></i>
+                <h3>Software Development</h3>
+                <p>Creating functional, scalable, and user-friendly software systems — including developing the <strong>ZURI Online Bank</strong> project from scratch.</p>
+                <h4>Key Areas</h4>
+                <div class="tag-list">
+                    <span class="tag">Web Applications</span>
+                    <span class="tag">Backend Development</span>
+                    <span class="tag">Database Design</span>
+                    <span class="tag">System Architecture</span>
+                </div>
+            </div>
+
+            <div class="expertise-card">
+                <i data-lucide="palette"></i>
+                <h3>Graphic Design & Digital Marketing</h3>
+                <p>Designing visually engaging digital content and crafting strong brand identities — from posters and logos to marketing creatives and online writing.</p>
+                <h4>Key Areas</h4>
+                <div class="tag-list">
+                    <span class="tag">Poster & Logo Design</span>
+                    <span class="tag">Brand Identity</span>
+                    <span class="tag">Digital Marketing</span>
+                    <span class="tag">Online Writing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email, phone, or connect with me on social media.</p>
+
+        <div class="contact-info">
+            <p><i data-lucide="mail"></i> <strong>Email:</strong> <a href="mailto:Johnmacharia12@gmail.com">Johnmacharia12@gmail.com</a></p>
+            <p><i data-lucide="phone"></i> <strong>Phone / WhatsApp:</strong> <a href="tel:+254791575532">+254 791 575 532</a></p>
+            <p><i data-lucide="map-pin"></i> <strong>Location:</strong> Nairobi, Kenya</p>
+            <p><i data-lucide="clock"></i> <strong>Availability:</strong> Mon–Fri, 9:00 AM – 6:00 PM (EAT)</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://linkedin.com/in/johnmacharia" target="_blank"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/johnmacharia" target="_blank"><i data-lucide="github"></i></a>
+            <a href="https://twitter.com/johnmacharia" target="_blank"><i data-lucide="twitter"></i></a>
+            <a href="https://facebook.com/JOHN MACHARIA" target="_blank"><i data-lucide="facebook"></i></a>
+        </div>
+
+        <p>Looking for collaboration or freelance work? Let's connect!</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+     
+            <p class="footer-copy">© 2025 John Macharia. All rights reserved.</p>
+        
+    </footer>
+
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

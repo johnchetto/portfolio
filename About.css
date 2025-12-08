@@ -1,0 +1,288 @@
+/* ================================
+   DARK MODE GLASSMORPHISM THEME
+   ================================ */
+
+/* GENERAL STYLES */
+#about {
+  padding: 80px 50px;
+  text-align: left;
+  background: #0D1117; /* Dark base */
+  color: #E6EDF3;       /* Soft white text */
+  font-family: Arial, sans-serif;
+}
+
+/* HEADINGS */
+#about h2 {
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #58A6FF; /* Electric blue */
+}
+
+#about h3 {
+  font-size: 1.8em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #79C0FF;
+}
+
+/* PARAGRAPHS */
+.about-intro p,
+.about-expertise p,
+.about-achievements p {
+  font-size: 1.1em;
+  line-height: 2;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+  color: #C9D1D9;
+}
+
+/* CONTAINER BOXES WITH BACKGROUND IMAGE */
+.about-intro,
+.about-expertise,
+.about-achievements {
+  background: url("images/image.png") center/cover no-repeat;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* DARK GLASS OVERLAY (UPDATED) */
+.about-intro::before,
+.about-expertise::before,
+.about-achievements::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);   /* DARK TRANSPARENT OVERLAY */
+  backdrop-filter: blur(4px);        /* Frosted blur effect */
+  z-index: 1;
+}
+
+/* Ensure text appears above overlay */
+.about-intro p,
+.about-expertise p,
+.about-achievements p {
+  position: relative;
+  z-index: 2;
+}
+
+/* IMAGE GRID */
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.image-card {
+  text-align: center;
+  max-width: 220px;
+  transition: 0.3s;
+  padding: 15px;
+
+  /* GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-card p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #58A6FF;
+}
+
+/* CALL TO ACTION BUTTON */
+.about-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-cta .btn {
+  background: rgba(88, 166, 255, 0.15);
+  color: #58A6FF;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 1px solid rgba(88, 166, 255, 0.4);
+}
+
+.about-cta .btn:hover {
+  background: #58A6FF;
+  color: #0D1117;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.7);
+}
+/* FIX: Make headings visible over background image */
+.about-intro h3,
+.about-expertise h3,
+.about-achievements h3 {
+  position: relative;
+  z-index: 2; /* Lift heading above overlay */
+  color: #FFFFFF; /* Pure white for strong contrast */
+  font-weight: 700;
+
+  /* Strong text-shadow for readability on background images */
+  text-shadow: 
+      0 0 8px rgba(0, 0, 0, 1),
+      0 0 12px rgba(0, 0, 0, 0.9),
+      0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------- NAVIGATION BAR STYLING ---------- */
+
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header and navbar */
+header {
+  width: 100%;
+  background: #1a1a1a; /* dark background */
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bfff;
+  cursor: pointer;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00bfff;
+  transform: scale(1.1);
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #00bfff;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background: #1a1a1a;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* =====================
+   RESPONSIVENESS
+   ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  #about { padding: 70px 40px; }
+  #about h2 { font-size: 2.4em; }
+  #about h3 { font-size: 1.6em; }
+  .about-intro p,
+  .about-expertise p,
+  .about-achievements p {
+    font-size: 1em;
+  }
+  .image-card { max-width: 180px; }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  #about { padding: 60px 25px; }
+  #about h2 { font-size: 2.2em; }
+  #about h3 { font-size: 1.4em; }
+  .about-intro p,
+  .about-expertise p,
+  .about-achievements p {
+    font-size: 0.95em;
+  }
+  .about-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-card { max-width: 80%; }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  #about { padding: 50px 15px; }
+  #about h2 { font-size: 2em; }
+  #about h3 { font-size: 1.2em; }
+  .about-intro p,
+  .about-expertise p,
+  .about-achievements p {
+    font-size: 0.9em;
+  }
+  .image-card { max-width: 100%; }
+  .about-cta .btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}

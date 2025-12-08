@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Macharia Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">JM</div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Feel free to reach out via email or connect with me on social media.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:johnmacharia@gmail.com">johnmacharia@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+254791575532">+254 791 575 532</a></p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://linkedin.com/in/johnmacharia" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/johnmacharia" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/johnmacharia" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <p>Looking for collaboration or a freelance project? Let's connect!</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3 class="footer-logo">John Macharia</h3>
+            <p class="footer-text">© 2025 John Macharia. All Rights Reserved.</p>
+            <div class="footer-social-links">
+                <a href="https://linkedin.com/in/johnmacharia" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/johnmacharia" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/johnmacharia" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT FOR HAMBURGER MENU -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

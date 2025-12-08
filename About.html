@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Macharia | Portfolio</title>
+  <link rel="stylesheet" href="About.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">John Macharia</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About me</a></li>
+        <li><a href="Project.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+    <section id="about">
+  <h2>About Me</h2>
+  <!-- Introduction -->
+  <div class="about-intro">
+    <p>
+      Hello! My name is <strong>John Macharia</strong>, and I am a passionate Full-Stack Developer with extensive experience in building modern, responsive, and interactive web applications. Ever since I began exploring technology, I have been fascinated by the way software and hardware systems work together to solve problems and improve efficiency in our daily lives. My journey into development started with curiosity about how websites are structured and applications are programmed, and over the years, this curiosity has grown into a full-fledged career. I specialize in combining creativity, analytical thinking, and technical knowledge to create applications that are not only functional but also user-friendly, efficient, and visually engaging. My work philosophy revolves around understanding user needs, studying system requirements, and ensuring that every element of a project, from the front-end interface to the back-end logic, works seamlessly together. Through consistent practice, learning, and exposure to various development tools and frameworks, I have developed the ability to design, implement, and maintain projects that address real-world challenges effectively, providing tangible value to clients and end-users alike.
+    </p>
+  </div>
+
+  <!-- Expertise / What I Do -->
+  <div class="about-expertise">
+    <h3>What I Do</h3>
+    <p>
+      I specialize in creating web applications that integrate both front-end and back-end technologies to deliver seamless digital experiences. On the front-end, I design interactive interfaces using HTML, CSS, JavaScript, and React, ensuring that users have intuitive and aesthetically appealing interactions. On the back-end, I build robust and secure server-side systems using PHP, Node.js, and MySQL, managing data efficiently and implementing functionalities that allow applications to scale as user demands grow. Beyond traditional web development, I am experienced in networking projects, configuring and optimizing networks to ensure secure communication and reliable system performance. Additionally, I engage in graphic and digital design projects, producing creative visuals, UI/UX designs, and branding materials that enhance a company’s digital presence. I approach each project holistically, considering usability, security, scalability, and visual appeal, and I am committed to delivering solutions that solve problems, meet client goals, and create meaningful experiences for users. My work involves careful planning, continuous testing, and iterative improvements to ensure that every application I develop performs flawlessly across devices and platforms.
+    </p>
+  </div>
+
+  <!-- Image Grid for Personal Photo & Projects -->
+  <div class="about-images">
+    <div class="image-card">
+      <img src="images/bull.jpg" alt="John Macharia">
+      <p>John Macharia</p>
+    </div>
+    <div class="image-card">
+      <a href="onlinebanking.kesug.com" target="_blank">
+        <img src="images/zuri.jpg" alt="Zuri Online Banking">
+      </a>
+      <p>Zuri Online Banking</p>
+    </div>
+    <div class="image-card">
+      <a href="ND.png" target="_blank">
+      <a href="stino.png" target="_blank">
+        <img src="images/Tech 2.jpg" alt="Graphic Design Work">
+      <br> <br>
+        <img src="images/stino.png" alt="business cards">
+      </a>
+      <p>Graphic & Design</p>
+    </div>
+    <div class="image-card">
+      <a href="projects.html#networking" target="_blank">
+        <img src="images/network.jpg" alt="Networking Project">
+      </a>
+      <p>Networking</p>
+    </div>
+  </div>
+
+  <!-- Achievements / Work Style -->
+  <div class="about-achievements">
+    <h3>Work Style & Achievements</h3>
+    <p>
+      My professional approach is inspired by the philosophy that every component of a system, whether it is software, hardware, or user interaction, must function harmoniously to achieve optimal performance. I approach every project with meticulous planning, attention to detail, and a commitment to excellence. I strive to understand the specific goals, challenges, and expectations of clients and users, ensuring that each project I deliver is tailored to meet these objectives. Notable projects, such as the Zuri Online Banking system, demonstrate my ability to develop complex, secure, and scalable applications with multiple integrated features, including transaction management, account security, and user-friendly interfaces. In addition to software projects, my graphic design work and networking projects showcase creativity, problem-solving skills, and technical expertise, reflecting my diverse skill set. I am highly organized, adaptive, and proactive, constantly learning new technologies and methodologies to refine my craft. Ultimately, my goal is to produce work that is professional, reliable, impactful, and exceeds expectations, leaving a lasting impression on clients and end-users alike.
+    </p>
+  </div>
+</section>
+<script>
+    // MOBILE MENU TOGGLE
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// OPTIONAL: Close menu when a link is clicked (mobile friendly)
+document.querySelectorAll('.nav-links li a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
+</script>
+</body>
